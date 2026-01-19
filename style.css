@@ -1,0 +1,98 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    display: flex;
+    /* Enables flexbox */
+
+    justify-content: space-between;
+    /* Logo on left, menu on right */
+
+    align-items: center;
+    /* Vertical center */
+
+    padding: 15px 30px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+}
+
+.menu {
+    display: flex;
+    /* Makes menu horizontal */
+
+    gap: 25px;
+    list-style: none;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+
+    align-items: center;
+    justify-content: center;
+
+    height: 200px;
+    background-color: white;
+}
+
+/* ================= CARDS ================= */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap cards on small screens */
+
+    justify-content: center;
+    /* Center cards */
+
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    /* Center text using flex */
+
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 120px;
+
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
